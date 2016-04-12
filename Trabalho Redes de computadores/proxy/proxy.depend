@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1460405995 source:/home/thiago/Desktop/proxy/main.cpp
+	<windows.h>
+	<winsock.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<string.h>
+	<unistd.h>
+	<string.h>
+	<iostream>
+
