@@ -34,7 +34,7 @@ using namespace std;
 void strupr(char str[])
 {
     int indx = 0;
-    for (; indx < 2; indx++)
+    for (; indx < MAX_SIZE; indx++)
 
     {
         if (str[indx] <= 122 && str[indx] >= 97)
@@ -148,6 +148,17 @@ int main(int argc, char **argv)
 
         printf("Server: Echoing the same data back to client...\n");
 
+
+        char auxiliar[50];
+        int a,b;
+        b = strlen(Buffer)-1;
+        for(a=0;Buffer[a]!='\0';a++){
+        auxiliar[b]=Buffer[a];
+        b--;
+        }
+        auxiliar[a]='\0';
+        strcpy(Buffer,auxiliar);
+        printf("\nResposta: %s\n",Buffer);
         strupr(Buffer);
 
 
